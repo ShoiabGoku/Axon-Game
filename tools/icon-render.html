@@ -1,0 +1,10 @@
+<!doctype html>
+<!-- Used by tools/make-icons.js: draws one icon SVG at an exact pixel size in the top-left corner. -->
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:transparent}</style></head>
+<body><img id="i" alt=""><script>
+  const q = new URLSearchParams(location.search);
+  const s = +q.get('size') || 512;
+  const i = document.getElementById('i');
+  i.style.cssText = `position:fixed;left:0;top:0;width:${s}px;height:${s}px`;
+  i.src = '../icons/' + q.get('svg');
+</script></body></html>

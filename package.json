@@ -1,0 +1,13 @@
+{
+  "name": "axon-neural-trials",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AXON — an installable reasoning, logic and IQ game (PWA). No build step, no dependencies.",
+  "type": "module",
+  "scripts": {
+    "serve": "node tools/serve.js 8795",
+    "test": "node tests/verify.js",
+    "simulate": "node tests/simulate-iq.js",
+    "icons": "node tools/make-icons.js"
+  }
+}
